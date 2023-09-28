@@ -126,6 +126,7 @@ video {
   position: relative;
   overflow: hidden;
   animation: optacy 2s;
+  
 }
 .works::after{
   position: absolute;
@@ -208,7 +209,7 @@ a.bor {
   z-index: 40;
 }
 .inf {
-    margin-top: 151px;
+    margin-top: 101px;
     padding-left: 8%;
     color: #fff;
     font-size: 22px;
@@ -228,7 +229,7 @@ a.bor {
     /* border-radius: 50%; */
     /* cursor: pointer; */
     /* z-index: 30; */
-    margin: 220px auto 0 auto;
+    margin: 150px auto 0 auto;
 }
 
 .click {
