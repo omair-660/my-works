@@ -118,13 +118,8 @@ nav .links a:hover::before{
 .form {
     /* width: 71%; */
     /* margin: 117px auto 0 auto; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 83vh;
     /* width: 90%; */
-    flex-wrap: wrap;
-    flex-direction: column;
     padding: 0 8%;
     position: relative;
 }
@@ -171,7 +166,7 @@ form .span::before {
   right: -20px;
   border-radius: 52px;
 }
-span:last-child {
+.span3 {
     background: linear-gradient(to right, #23e9e9,#1d97fe);
     width: 10px;
     height: 10px;
@@ -179,7 +174,7 @@ span:last-child {
     display: block;
     position: absolute;
     right: -23px;
-    bottom: -9px;
+
 }
 .span2 {
     background: linear-gradient(to right, #23e9e9,#1d97fe);
@@ -191,7 +186,7 @@ span:last-child {
     left: -23px;
     top: -9px;
 }
-input[type="text"], textarea, input[type="email"] {
+input[type="text"], textarea, input[type="email"], input[type="submit"] {
     width: 100%;
     padding: 6px;
     background: no-repeat;
@@ -204,9 +199,15 @@ input[type="text"], textarea, input[type="email"] {
 }
 input[type="text"]:hover,
  textarea:hover,
-  input[type="email"]:hover{
+  input[type="email"]:hover,
+  input[type="submit"]:hover
+  {
   outline-color: #2196f324;
 
+}
+input[type="submit"] {
+    width: 40%;
+    cursor: pointer;
 }
 ::placeholder{
   color: #EEe;
@@ -288,4 +289,40 @@ a.bor {
 .trans{
   transform: translate(0);
   z-index: 40;
+}
+.gm {
+    filter: invert(1);
+    display: grid;
+    width: 100%;
+}
+form img , .gm img{
+  width: 30px;
+  transition: 0.5s;
+}
+.gmail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+    gap: 27px;
+}
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+
+}
+.fillter {
+    filter: invert(1);
+    background: #ffdca7;
+    border-radius: 50%;
+    padding: 4px;
+}
+.wa{
+background: #002358;
+border-radius: 50%;
+padding: 4px;
+}
+.social img:hover{
+  transform: rotate(180deg);
 }
